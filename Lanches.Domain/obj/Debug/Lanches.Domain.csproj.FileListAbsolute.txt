@@ -1,0 +1,12 @@
+C:\Users\thiag\Documents\Projects\Dextra\Lanches.Domain\bin\Debug\Lanches.Domain.dll
+C:\Users\thiag\Documents\Projects\Dextra\Lanches.Domain\bin\Debug\Lanches.Domain.pdb
+C:\Users\thiag\Documents\Projects\Dextra\Lanches.Domain\obj\Debug\Lanches.Domain.csprojResolveAssemblyReference.cache
+C:\Users\thiag\Documents\Projects\Dextra\Lanches.Domain\obj\Debug\Lanches.Domain.csproj.CoreCompileInputs.cache
+C:\Users\thiag\Documents\Projects\Dextra\Lanches.Domain\obj\Debug\Lanches.Domain.dll
+C:\Users\thiag\Documents\Projects\Dextra\Lanches.Domain\obj\Debug\Lanches.Domain.pdb
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Domain\bin\Debug\Lanches.Domain.dll
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Domain\bin\Debug\Lanches.Domain.pdb
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Domain\obj\Debug\Lanches.Domain.csproj.CoreCompileInputs.cache
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Domain\obj\Debug\Lanches.Domain.dll
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Domain\obj\Debug\Lanches.Domain.pdb
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Domain\obj\Debug\Lanches.Domain.csprojResolveAssemblyReference.cache
