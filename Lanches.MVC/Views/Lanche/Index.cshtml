@@ -1,0 +1,134 @@
+﻿@model IEnumerable<Lanches.Domain.Entities.Lanche>
+
+@{
+    ViewBag.Title = "Cardápio de Lanches";
+}
+
+<h2>Lanches</h2>
+
+<table class="table" id="tabelaLanches">
+    <tr>
+        <th>Código</th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>@Html.DisplayNameFor(model => model.Ingredientes)</th>
+        <th>Preço</th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        string td = "";
+        <tr>
+            <td data-codigo="@item.Id">
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                <table style="border:hidden">
+                    <tr >
+                        @{if (item.Ingredientes != null)
+                            {
+                                foreach (var item2 in item.Ingredientes)
+                                {
+                                    if (item2.Nome != "" || item2.Nome != null)
+                                    {
+                                        if (td == "")
+                                        {
+                                            td = td + "<td style='text - align:center'>" + item2.Nome.ToString() + " <span class='badge' style='background-color: darkcyan'> " + item2.Quantidade.ToString() + "</span></tb>";
+                                        }
+                                        else
+                                        {
+                                            td = td + "<td> - </td><td style='text - align:center'>" + item2.Nome.ToString() + " <span class='badge' style='background-color: darkcyan'> " + item2.Quantidade.ToString() + "</span></tb>";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        @Html.Raw(td)
+                    </tr>
+                </table>
+            <td>
+                R$ @Html.DisplayFor(modelItem => item.Valor)
+            </td>
+            <td style="text-align:center">
+                <button type="button" class="btn btn-primary btn-xs" id="btnPersonalizar">Personalizar</button>
+                <a href="/Lanche/Details/@item.Id" class="btn btn-success btn-xs">Selecionar</a>
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Mude seus ingredientes</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" id="Close">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            var textoLanche;
+
+            $(document).on('click', '#btnPersonalizar', function (e) {
+
+                e.preventDefault;
+
+                var idLanche = $(this).closest('tr').find('td[data-codigo]').data('codigo');
+
+                $.ajax({
+                    type: "GET",
+                    dataType: "json",
+                    url: "/Lanche/GetLanche/",
+                    data: { id: idLanche },
+                    success: function (data) {
+                        textoLanche = data;
+                        ExibirModal(data);
+                    },
+                    error: function (xhr) {
+                        alert('Error: ' + xhr.statusText);
+
+                    }
+                });
+
+
+            })
+
+            $('#exampleModal').on('show.bs.modal', function (event) {
+                var modal = $(this);
+                modal.find('.modal-body').text(textoLanche.Nome);
+            })
+
+            function ExibirModal(objlanche) {
+                //$('#exampleModal').find('.modal-body').text(objlanche.nome);
+                $('#exampleModal').modal('show');
+            }
+
+        });
+
+    </script>
+}
