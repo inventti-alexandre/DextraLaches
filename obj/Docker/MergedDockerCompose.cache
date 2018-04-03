@@ -1,0 +1,13 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  lanches.mvc:
+    build:
+      context: C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.MVC
+      dockerfile: Dockerfile
+    image: lanchesmvc
+    ports:
+    - 80/tcp
+version: '3.0'
