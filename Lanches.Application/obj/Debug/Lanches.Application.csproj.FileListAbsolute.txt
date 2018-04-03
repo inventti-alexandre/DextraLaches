@@ -1,0 +1,9 @@
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Application\obj\Debug\Lanches.Application.csprojResolveAssemblyReference.cache
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Application\obj\Debug\Lanches.Application.csproj.CoreCompileInputs.cache
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Application\bin\Debug\Lanches.Application.dll
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Application\bin\Debug\Lanches.Application.pdb
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Application\bin\Debug\Lanches.Domain.dll
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Application\bin\Debug\Lanches.Domain.pdb
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Application\obj\Debug\Lanches.Application.csproj.CopyComplete
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Application\obj\Debug\Lanches.Application.dll
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Application\obj\Debug\Lanches.Application.pdb
