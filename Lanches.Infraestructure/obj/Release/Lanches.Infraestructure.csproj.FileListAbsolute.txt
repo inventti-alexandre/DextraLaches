@@ -1,0 +1,9 @@
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Infraestructure\bin\Release\Lanches.Infraestructure.dll
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Infraestructure\bin\Release\Lanches.Infraestructure.pdb
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Infraestructure\bin\Release\Lanches.Domain.dll
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Infraestructure\bin\Release\Lanches.Domain.pdb
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Infraestructure\obj\Release\Lanches.Infraestructure.csprojResolveAssemblyReference.cache
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Infraestructure\obj\Release\Lanches.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Infraestructure\obj\Release\Lanches.Infraestructure.csproj.CopyComplete
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Infraestructure\obj\Release\Lanches.Infraestructure.dll
+C:\Users\thiag\Documents\Projects\Dextra\Lanches\Lanches.Infraestructure\obj\Release\Lanches.Infraestructure.pdb
