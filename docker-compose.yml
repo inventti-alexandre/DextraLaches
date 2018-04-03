@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  lanches.mvc:
+    image: lanchesmvc
+    build:
+      context: .\Lanches.MVC
+      dockerfile: Dockerfile
